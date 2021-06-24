@@ -1,0 +1,47 @@
+<!-- Theme style  -->
+{% import "bootstrap/wtf.html" as wtf %}
+{% extends "base.html" %}
+
+<!-- {% block title %} {{ super() }} | Login{% endblock %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+
+    <title>Signin Template for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/sign-in/">
+
+    
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> 
+</head> 
+
+-->
+
+{% block content %}
+
+<body class="text-center">
+    <div class="form-signin">
+        <h1 class="h3 mb-3 font-weight-normal">Please Login below</h1>
+        <form action="{{ url_for('login') }}" method="POST" style="width: 30%; position: relative;left: 35%;">
+             {{ form.hidden_tag() }}
+             {{ wtf.form_field(form.email) }}
+             {{ wtf.form_field(form.password) }}
+    <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+    </div>
+    <button name="login" class="btn btn-lg btn-primary btn-block" input type="submit" value="parent" style="background-color: #08a12e;">Login Parent</button>
+    <button name="login" class="btn btn-lg btn-primary btn-block" input type="submit" value="student" style="background-color: #08a12e;">Login Student</button>
+    
+        <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
+        </form>
+    </div>
+</body>
+
+{% endblock %}
+
