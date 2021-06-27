@@ -108,23 +108,10 @@
 					</div>
 					<div class="col-md-4 animate-box">  		   	
 						<div class="mt">
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<div>
-								<h4>Real Project For Real Solutions</h4>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. </p>
-							</div>
-							<div>
-								<h4>Real Project For Real Solutions</h4>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							</div>
-							<div>
-								<h4>Real Project For Real Solutions</h4>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. </p>
-							</div>
+							<video width="500" height="400" controls="controls" src="static/LearnIn Video Explainer.mp4" style="padding-right: 10px;"> 
+								Your browser does not support the HTML5 Video element.
+							</video>
+							
 						</div>
 					</div>
 				</div>
@@ -196,22 +183,22 @@
 			<div class="row">                            
 				<div class="col-md-6 animate-box">
 					<div class="course">
-						<img src="{{url_for('static', filename='images/teacher1.jpeg')}}" class="course-img" style="background-image: url({{ url_for("pictures", filename="teacher1") }});"> 
+						<img src="{{url_for('static', filename='images/teacher2.jpeg')}}" class="course-img" style="background-image: url({{ url_for("pictures", filename="teacher1") }});"> 
 						</a>
-						<div class="desc">
+						<div class="desc" style="overflow: scroll;">
 							<h3><a href="#">Mr Brandon</a></h3>
-							<p>Mr. Brandon has spent eight years teaching classes between K-6. He is super excited to experiment with technology in his teaching role at LearnIn. He is committed to providing your family with a loving and developmentally sound foundation for a lifetime of learning. He believes that play is a child's most important work he strives to create and maintain an online experience where your child can grow and thrive.</p>
+							<p>Mr. Brandon has spent eight years teaching classes between K-6. He is super excited to experiment with technology in his teaching role at LearnIn. He is committed to providing your family with a loving and sound foundation for a lifetime of learning. He believes that play is a child's most important work he strives to create an online experience where your child can grow and thrive.</p>
 							
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6 animate-box">
 					<div class="course">
-						<img src="{{url_for('static', filename='images/teacher2.jpeg')}}" class="course-img" style="background-image: url({{ url_for("pictures", filename="teacher2") }});">
+						<img src="{{url_for('static', filename='images/teacher4.jpeg')}}" class="course-img" style="background-image: url({{ url_for("pictures", filename="teacher2") }});">
 						</a>
 						<div class="desc">
 							<h3><a href="#">Mr Mauro</a></h3>
-							<p>​Mr. Mauro has been teaching for 10 years. He grew up in Houston, Texas, and attended college at Rice University, where he studied Family and Child Development. When he’s not teaching, he is at home with his three awesome kids: Lily, Tristan, and Eli! All three of his kids are enrolled in LearnIn so he has the opportunity to create great memories of our school while sharing them with students around the country. </p>
+							<p style="overflow: scroll;">​ Mr. Mauro has been teaching for 10 years. He grew up in Houston, Texas, and attended college at Rice University, where he studied Family and Child Development. When he’s not teaching, he is at home with his two kids: Lily and Tristan! All three of his kids are enrolled in LearnIn so he has the opportunity to create great memories of our school while sharing them with students around the country."</p>
 							
 						</div>
 					</div>
@@ -220,20 +207,20 @@
 					<div class="course">
 						<img src="{{url_for('static', filename='images/teacher3.jpeg')}}" class="course-img" style="background-image: url({{ url_for("pictures", filename="teacher3") }});">
 						</a>
-						<div class="desc">
+						<div class="desc" style="overflow: scroll;">
 							<h3><a href="#">Miss Ladislaya</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+							<p>Ms. Ladi has been teaching since she graduated university. Her dream is to run an amazing school that has a nurturing, loving environment where children can experience new challenges that will help build their confidence while they play and learn. She takes that spirit to the classes at LearnIn and she looks forward to having a positive impact on children's growth. </p>
 							
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6 animate-box">
 					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(images/project-4.jpg);">
+						<img src="{{url_for('static', filename='images/teacher1.jpeg')}}" class="course-img" style="max-width: 100%; max-height: auto;">
 						</a>
-						<div class="desc">
+						<div class="desc" style="overflow: scroll;">
 							<h3><a href="#">Miss Ladi</a></h3>
-							<p>Ms. Ladi always wanted to be a teacher and has been fortunate and blessed enough to have been teaching since she graduated university. Her dream is to run an amazing school that has a nurturing, loving environment where children can learn and experience new challenges that will help build their confidence while they play and learn. She takes that spirit to the classes at LearnIn and she looks forward to having a positive impact on children's growth and to new bring them new discoveries in their education journey. </p>
+							<p>Ms. Ladi has been teaching since she graduated university. Her dream is to run an amazing school that has a nurturing, loving environment where children can experience new challenges that will help build their confidence while they play and learn. She takes that spirit to the classes at LearnIn and she looks forward to having a positive impact on children's growth. </p>
 							
 						</div>
 					</div>
@@ -242,37 +229,7 @@
 		</div>
 	</div>
 
-	<div id="fh5co-counter" class="fh5co-counters" style="background-image: url({{ url_for("pictures", filename="img_bg_4") }});" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">   
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					<div class="row">
-						<div class="col-md-3 col-sm-6 text-center animate-box">
-							<span class="icon"><i class="icon-world"></i></span>
-							<span class="fh5co-counter js-counter" data-from="0" data-to="3297" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="fh5co-counter-label">Foreign Followers</span>
-						</div>
-						<div class="col-md-3 col-sm-6 text-center animate-box">
-							<span class="icon"><i class="icon-study"></i></span>
-							<span class="fh5co-counter js-counter" data-from="0" data-to="3700" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="fh5co-counter-label">Students Enrolled</span>
-						</div>
-						<div class="col-md-3 col-sm-6 text-center animate-box">
-							<span class="icon"><i class="icon-bulb"></i></span>
-							<span class="fh5co-counter js-counter" data-from="0" data-to="5034" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="fh5co-counter-label">Classes Complete</span>
-						</div>
-						<div class="col-md-3 col-sm-6 text-center animate-box">
-							<span class="icon"><i class="icon-head"></i></span>
-							<span class="fh5co-counter js-counter" data-from="0" data-to="1080" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="fh5co-counter-label">Certified Teachers</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 
 	
 

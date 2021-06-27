@@ -7,6 +7,8 @@
 <body class="text-center">
     <div class="form-signin">
         <h1 class="h3 mb-3 font-weight-normal">Please Login below</h1>
+        <br>
+        <br>
         <form action="{{ url_for('login') }}" method="POST" style="width: 30%; position: relative;left: 35%;">
              {{ form.hidden_tag() }}
              {{ wtf.form_field(form.email) }}

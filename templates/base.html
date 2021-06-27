@@ -58,7 +58,7 @@
 	</head>
 	<body>
 		
-	<div class="fh5co-loader"></div>
+	<!-- <div class="fh5co-loader"></div> -->
 	
 	<div id="page">
 	<nav class="fh5co-nav" role="navigation">
@@ -66,15 +66,15 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>LearnIn<span>.</span></a></div>
+						<div id="fh5co-logo"><a href="{{ url_for('index') }}">LearnIn<span>.</span></a></div>
 					</div>
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
 							<li class="active"><a href="index.html">Home</a></li>
 							
-							<li><a href="about.html">About</a></li>
+							
 							<li><a href="{{ url_for('pricing') }}">Pricing</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							
 							<li class="btn-cta"><a href="{{ url_for('login') }}"><span>Login</span></a></li>
 							<li class="btn-cta"><a href="{{ url_for('register') }}"><span>Register</span></a></li>
 						</ul>
