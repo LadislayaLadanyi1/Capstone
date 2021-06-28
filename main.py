@@ -56,6 +56,7 @@ def index():
     return render_template("index.html")
 
 @app.route("/lp")
+@login_required
 def lp():
     return render_template("indexLP.html")
 
@@ -131,8 +132,13 @@ def logout():
     return redirect(url_for("index"))
 
 @app.route("/dashboard")
+@login_required
 def dashbaord(): 
     return render_template("dashboard.html")
+
+
+
+
 
 
 @app.route("/pictures/<filename>")
@@ -146,7 +152,6 @@ db.create_all()
 
 if __name__ == "__main__":
     app.run(debug = True)
-
 
 
 

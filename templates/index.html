@@ -108,7 +108,7 @@
 					</div>
 					<div class="col-md-4 animate-box">  		   	
 						<div class="mt">
-							<video width="500" height="400" controls="controls" src="static/LearnIn Video Explainer.mp4" style="padding-right: 10px;"> 
+							<video position="absolute" right="100" width="500" height="400" controls="controls" src="static/LearnIn Video Explainer.mp4"> 
 								Your browser does not support the HTML5 Video element.
 							</video>
 							
@@ -129,14 +129,14 @@
 			<div class="row animate-box">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
 					<h2>Our Pillars</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-3 col-sm-6 text-center animate-box">
 					<div class="services">
 						<span class="icon">
-							<i class="icon-shop"></i>
+							<i class="icon-world"></i>
 						</span>
 						<div class="desc">
 							<h3><a href="#">World class teaching</a></h3>
@@ -147,7 +147,7 @@
 				<div class="col-md-3 col-sm-6 text-center animate-box">
 					<div class="services">
 						<span class="icon">
-							<i class="icon-heart4"></i>
+							<i class="icon-shop"></i>
 						</span>
 						<div class="desc">
 							<h3><a href="#">School experience brought to your home</a></h3>
@@ -158,11 +158,22 @@
 				<div class="col-md-3 col-sm-6 text-center animate-box">
 					<div class="services">
 						<span class="icon">
-							<i class="icon-banknote"></i>
+							<i class="icon-check"></i>
 						</span>
 						<div class="desc">
 							<h3><a href="#">State approved curriculum</a></h3>
 							<p>All of our courses are in-line with official curriculum and prepare students for high performance in standardized tests. </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center animate-box">
+					<div class="services">
+						<span class="icon">
+							<i class="icon-study"></i>
+						</span>
+						<div class="desc">
+							<h3><a href="#">Immersive school experience</a></h3>
+							<p>Allow your kid to live an immersive school experience that will allow him/her to take the best out of the school experience. </p>
 						</div>
 					</div>
 				</div>
@@ -185,9 +196,9 @@
 					<div class="course">
 						<img src="{{url_for('static', filename='images/teacher2.jpeg')}}" class="course-img" style="background-image: url({{ url_for("pictures", filename="teacher1") }});"> 
 						</a>
-						<div class="desc" style="overflow: scroll;">
-							<h3><a href="#">Mr Brandon</a></h3>
-							<p>Mr. Brandon has spent eight years teaching classes between K-6. He is super excited to experiment with technology in his teaching role at LearnIn. He is committed to providing your family with a loving and sound foundation for a lifetime of learning. He believes that play is a child's most important work he strives to create an online experience where your child can grow and thrive.</p>
+						<div class="desc">
+							<h3>Mr Brandon</a></h3>
+							<p style="overflow: scroll;"> Mr. Brandon has spent eight years teaching classes between K-6. He is super excited to experiment with technology in his teaching role at LearnIn. He is committed to providing your family with a loving and sound foundation for a lifetime of learning. He believes that play is a child's most important work he strives to create an online experience where your child can grow and thrive.</p>
 							
 						</div>
 					</div>
@@ -197,7 +208,7 @@
 						<img src="{{url_for('static', filename='images/teacher4.jpeg')}}" class="course-img" style="background-image: url({{ url_for("pictures", filename="teacher2") }});">
 						</a>
 						<div class="desc">
-							<h3><a href="#">Mr Mauro</a></h3>
+							<h3>Mr Mauro</a></h3>
 							<p style="overflow: scroll;">​ Mr. Mauro has been teaching for 10 years. He grew up in Houston, Texas, and attended college at Rice University, where he studied Family and Child Development. When he’s not teaching, he is at home with his two kids: Lily and Tristan! All three of his kids are enrolled in LearnIn so he has the opportunity to create great memories of our school while sharing them with students around the country."</p>
 							
 						</div>
@@ -208,7 +219,7 @@
 						<img src="{{url_for('static', filename='images/teacher3.jpeg')}}" class="course-img" style="background-image: url({{ url_for("pictures", filename="teacher3") }});">
 						</a>
 						<div class="desc" style="overflow: scroll;">
-							<h3><a href="#">Miss Ladislaya</a></h3>
+							<h3><a href="#"></a>Miss Ladislaya</a></h3>
 							<p>Ms. Ladi has been teaching since she graduated university. Her dream is to run an amazing school that has a nurturing, loving environment where children can experience new challenges that will help build their confidence while they play and learn. She takes that spirit to the classes at LearnIn and she looks forward to having a positive impact on children's growth. </p>
 							
 						</div>
@@ -219,8 +230,8 @@
 						<img src="{{url_for('static', filename='images/teacher1.jpeg')}}" class="course-img" style="max-width: 100%; max-height: auto;">
 						</a>
 						<div class="desc" style="overflow: scroll;">
-							<h3><a href="#">Miss Ladi</a></h3>
-							<p>Ms. Ladi has been teaching since she graduated university. Her dream is to run an amazing school that has a nurturing, loving environment where children can experience new challenges that will help build their confidence while they play and learn. She takes that spirit to the classes at LearnIn and she looks forward to having a positive impact on children's growth. </p>
+							<h3><a href="#">Dr Nachu</a></h3>
+							<p>Dr Nachu has been exposed to cutting edge technolgy all her life. However her true passion is teaching young kids. Dr Nachu graduated top of her cohort at MIT, where she studied quantum engineering. She later went on and worked for Nasa, but got quickly poached and went on to SpaceX and work alongside Elon Musk. After landing the rover in Mars, Dr Nachu wanted to pivot, so she came to LeanIn </p>
 							
 						</div>
 					</div>
@@ -236,19 +247,7 @@
 	
 	
 
-	<div id="fh5co-register" style="background-image: url({{ url_for("pictures", filename="img_bg_2") }});">
-		<div class="overlay"></div>
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2 animate-box">
-				<div class="date-counter text-center">
-					<h2>14 day free trial</h2>
-					<div class="simply-countdown simply-countdown-one"></div>
-					<p><strong>Limited Offer, Hurry Up!</strong></p>
-					<p><a href="#" class="btn btn-primary btn-lg btn-reg">Register Now!</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 
 	
 
